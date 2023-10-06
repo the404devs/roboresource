@@ -252,6 +252,7 @@ h5 {
 .post {
     /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); */
     transition: all 0.2s ease-in-out;
+    flex-direction: column;
     /* animation: postHighlightScale 0.6s ease-in-out; */
 }
 
@@ -271,7 +272,11 @@ h5 {
 }
 
 .content {
-    width: 95%;
+    justify-content: flex-start;
+}
+
+.content.mainpage {
+    justify-content: space-evenly;
 }
 
 #loading-anim {
@@ -306,4 +311,12 @@ h5 {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.blob > .blob-header {
+    line-height: unset;
+}
+
+.blob {
+    height: 280px;
 }
