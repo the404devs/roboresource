@@ -273,6 +273,7 @@ h5 {
 
 .content {
     justify-content: flex-start;
+    padding-bottom: 10px;
 }
 
 .content.mainpage {

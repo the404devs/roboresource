@@ -72,10 +72,6 @@ function loadInstructionsFromJSON() {
                 ).attr(
                     "onclick", "scrollToElem('" + id + "')"
                 ).html(key)
-            ).append(
-                $("<br>")
-            ).append(
-                $("<br>")
             );
 
             jsonData[key].sets.forEach(set => {
@@ -107,10 +103,6 @@ function loadInstructionsFromJSON() {
                         ).append(
                             $("<span>").addClass("checkmark")
                         )
-                    ).append(
-                        $("<br>")
-                    ).append(
-                        $("<br>")
                     );
                 }
                 counts[sets.indexOf(cleanedSet)]++;
@@ -178,10 +170,6 @@ function loadImagesFromJSON() {
                 ).attr("tag", "dummy").attr(
                     "type", cleanedType
                 ).html(key)
-            ).append(
-                $("<br>")
-            ).append(
-                $("<br>")
             );
 
             if (!tags.includes(jsonData[key].type)) {
@@ -209,10 +197,6 @@ function loadImagesFromJSON() {
                     ).addClass(
                         "link"
                     ).append($("<span>").addClass("checkmark"))
-                ).append(
-                    $("<br>")
-                ).append(
-                    $("<br>")
                 );
             }
 
@@ -288,10 +272,6 @@ function loadProgramsFromJSON() {
                 ).attr(
                     "type", jsonData[key].type.join().replace(/ /g, "").replace(/,/g, ", ")
                 ).html(key)
-            ).append(
-                $("<br>")
-            ).append(
-                $("<br>")
             );
 
             jsonData[key].tags.forEach(tag => {
@@ -323,10 +303,6 @@ function loadProgramsFromJSON() {
                         ).append(
                             $("<span>").addClass("checkmark")
                         )
-                    ).append(
-                        $("<br>")
-                    ).append(
-                        $("<br>")
                     );
                 }
                 counts[tags.indexOf(cleanedTag)]++;
@@ -362,10 +338,6 @@ function loadProgramsFromJSON() {
                         ).addClass(
                             "link"
                         ).append($("<span>").addClass("checkmark"))
-                    ).append(
-                        $("<br>")
-                    ).append(
-                        $("<br>")
                     );
                 }
                 counts[tags.indexOf(type)]++;
