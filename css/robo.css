@@ -175,6 +175,8 @@ iframe.robo-gallery-image {
 
 h5 {
     margin-bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .prev,
