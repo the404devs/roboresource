@@ -220,7 +220,7 @@ function loadProgramsFromJSON() {
     $.getJSON("./data/programs.json", function(jsonData) {
         let ids = [];
         console.log(Object.keys(jsonData));
-        Object.keys(jsonData).forEach(key => {
+        Object.keys(jsonData).reverse().forEach(key => {
             let id = clean(key);
             ids.push(id);
             $("#main").append(
