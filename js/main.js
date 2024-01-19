@@ -453,7 +453,7 @@ function showImageOverlay(imageID) {
     $('#' + imageID).addClass("active");
     const imageSource = unthumbifySource($('#' + imageID).attr('src'));
     $("#image-overlay-img").attr('src', imageSource);
-    $("body").css('overflow', 'hidden');
+    $(".content").css('overflow-y', 'hidden');
     const targetGallery = $('#' + imageID).attr('gallery');
     $("#image-overlay-gallery").html($("#" + targetGallery).html());
     const badTitleElem = $("#image-overlay-gallery").children("h4")[0]
@@ -473,7 +473,7 @@ function unthumbifySource(src) {
 function hideImageOverlay() {
     overlayActive = false;
     $('#image-overlay').fadeOut(400, function() {
-        $("body").css('overflow', 'scroll');
+        $(".content").css('overflow-y', 'scroll');
         $("#image-overlay-img").attr('src', '');
     });
     slideIndex = 1;

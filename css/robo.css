@@ -200,6 +200,13 @@ h5 {
     z-index: 12;
     background: none;
     border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.prev:hover, .next:hover {
+    box-shadow: none;
 }
 
 .prev:hover span,
