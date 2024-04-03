@@ -1,9 +1,10 @@
-:root {
+body.theme-override {
     --primary: red;
     --highlight: red;
     --border-radius: 0;
     --shadow: none;
-    --background-gradient: linear-gradient(90deg, rgba(89, 193, 115, 1) 0%, rgba(161, 127, 224, 1) 62%, rgba(110, 76, 172, 1) 100%);
+    --background-gradient: linear-gradient(to bottom, black 0%, red 100%);
+    --button-gradient:linear-gradient(90deg, rgba(89, 193, 115, 1) 0%, rgba(161, 127, 224, 1) 62%, rgba(110, 76, 172, 1) 100%);
 }
 
 .logo {
@@ -113,7 +114,7 @@ h3 {
 }
 
 .row {
-    background-color: var(--background-transparent);
+    background-color: var(--background-alt2);
     border: 1px solid var(--border);
     border-radius: 0;
     display: -webkit-flex;
@@ -178,7 +179,7 @@ h3 {
 
 .button:hover span {
     padding-right: 25px;
-    color: var(--text-dark);
+    color: var(--text-alt);
 }
 
 .button:before {
@@ -200,7 +201,7 @@ h3 {
     border-radius: 0;
     opacity: 1;
     /* background-color: var(--highlight); */
-    background: var(--background-gradient);
+    background: var(--button-gradient);
 }
 
 .button:hover span:after {
