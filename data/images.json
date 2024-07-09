@@ -2,7 +2,7 @@
     "EV3-4WD": {
         "type": "EV3",
         "description": "My first 4-wheel-drive car build in almost a decade. Uses pretty much the same chassis design as \"The Beast\" from 2015. This was built to promote Idea Labs at the Stouffville Day Camp Open House on May 25, 2024.",
-        "galleries:" [{
+        "galleries": [{
             "name": "EV3-4WD (2024-05-25)",
             "path": "./images/EV3-4WD/",
             "images": [

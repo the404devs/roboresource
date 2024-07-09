@@ -159,6 +159,20 @@ function loadImagesFromJSON() {
                     )
                     j++;
                 });
+
+                if (gallery.videos) {
+                    gallery.videos.forEach(video => {
+                        const thumbifiedPath = path.replace("images/", "images/THUMBS/");
+                        const ext = video.split(".").pop();
+                        const thumbifiedVideo = video.replace("." + ext, "_videothumb.png");
+                        
+                        $("#" + id + "-" + i).append(
+                            $("<img>").attr("src", thumbifiedPath + thumbifiedVideo).addClass("robo-gallery-videothumb").attr("id", id + "-" + i + "-" + j).attr("gallery", id + "-" + i).attr("onclick", "showImageOverlay('" + id + "-" + i + "-" + j + "')")
+                        )
+                        j++;
+                    });
+                }
+                
                 i++;
             });
 
@@ -452,7 +466,19 @@ function showImageOverlay(imageID) {
     console.log(imageID);
     $('#' + imageID).addClass("active");
     const imageSource = unthumbifySource($('#' + imageID).attr('src'));
-    $("#image-overlay-img").attr('src', imageSource);
+
+    if (imageSource.includes(".mp4")) {
+        $("#image-overlay-vid").attr('src', imageSource).show();
+        $("#image-overlay-img").attr('src', '').hide();
+        $("#image-overlay-img").css('opacity', '0');
+        $("#image-overlay-vid").css('opacity', '1');
+    } else {
+        $("#image-overlay-img").attr('src', imageSource).show();
+        $("#image-overlay-vid").attr('src', '').hide();
+        $("#image-overlay-img").css('opacity', '1');
+        $("#image-overlay-vid").css('opacity', '0');
+    }
+
     $(".content").css('overflow-y', 'hidden');
     const targetGallery = $('#' + imageID).attr('gallery');
     $("#image-overlay-gallery").html($("#" + targetGallery).html());
@@ -465,7 +491,12 @@ function showImageOverlay(imageID) {
 }
 
 function unthumbifySource(src) {
-    const unthumbed = src.replace("THUMBS/", "").replace("_thumb", "");
+    let unthumbed;
+    if (src.includes("videothumb")) {
+        unthumbed = src.replace("THUMBS/", "").replace("_videothumb.png", ".mp4")
+    } else {
+        unthumbed = src.replace("THUMBS/", "").replace("_thumb", "");
+    }
     // console.log("Unthumbified " + src, unthumbed);
     return unthumbed;
 }
@@ -487,7 +518,9 @@ function showSlides(n) {
     let i;
     const thumbs = $("#image-overlay-gallery").children("img");
     $("#image-overlay-img").attr('src', "images/null.png");
+    $("#image-overlay-vid").attr('src', "");
     $("#image-overlay-img").css('opacity', '0');
+    $("#image-overlay-vid").css('opacity', '0');
     $("#image-overlay-img").attr('onclick', "");
     if (n > thumbs.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = thumbs.length }
@@ -495,10 +528,20 @@ function showSlides(n) {
         $(thumbs[i]).removeClass("active");
     }
     $(thumbs[slideIndex - 1]).addClass("active");
-    $("#image-overlay-img").attr('src', unthumbifySource($("#image-overlay-gallery").children("img")[slideIndex - 1].src));
-    $("#image-overlay-img").css('opacity', '1');
-    $("#image-overlay-img").attr('onclick', "window.open(this.src)");
-    $("#image-overlay-gallery").children("img")[slideIndex - 1].scrollIntoView({ behavior: 'smooth' });
+    const mediaSource = unthumbifySource($("#image-overlay-gallery").children()[slideIndex - 1].src);
+    if (mediaSource.includes(".mp4")) {
+        $("#image-overlay-vid").attr('src', mediaSource);
+        $("#image-overlay-vid").css('opacity', '1');
+        $("#image-overlay-img").hide();
+        $("#image-overlay-vid").show();
+    } else {
+        $("#image-overlay-img").attr('src', mediaSource);
+        $("#image-overlay-img").css('opacity', '1');
+        $("#image-overlay-img").attr('onclick', "window.open(this.src)");
+        $("#image-overlay-vid").hide();
+        $("#image-overlay-img").show();
+    }
+    $("#image-overlay-gallery").children()[slideIndex - 1].scrollIntoView({ behavior: 'smooth' });
 }
 
 function getIdFromURL() {

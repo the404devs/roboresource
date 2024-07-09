@@ -3,15 +3,15 @@
 # Generate thumbnails for RoboResources images (2022-05-20)
 # https://stackoverflow.com/questions/12913667/bash-script-to-create-customized-thumbnails
 
-THUMBS_FOLDER=/home/the404/Development/the404/roboresource/images/THUMBS
-BASE_FOLDER=/home/the404/Development/the404/roboresource/images
+THUMBS_FOLDER=/home/the404/Development/roboresource/images/THUMBS/
+BASE_FOLDER=/home/the404/Development/roboresource/images/
 CURDIR=""
 mkdir -p $THUMBS_FOLDER
 cd $BASE_FOLDER
 while IFS= read -d $'\0' -r file ; do
         echo "File found: $file"
         IMAGE_TYPE=`file --mime-type -b "$file" | awk -F'/' '{print $1}'`
-        if [ x$IMAGE_TYPE = "ximage" ]; then
+        if [ "$IMAGE_TYPE" = "image" ]; then
 
             filename=$(basename "$file")
             extension="${filename##*.}"
@@ -30,10 +30,18 @@ while IFS= read -d $'\0' -r file ; do
                     convert -sample 200x150 "$file" "$OUTNAME"
                 fi
             fi
+        elif [ "$IMAGE_TYPE" = "video" ]; then
 
-        elif [ $IMAGE_TYPE = "inode" ]; then
+            filename=$(basename "$file")
+            filename="${filename%.*}"
+            echo "file is $filename"
+            ffmpeg -i "$file" -vf "select=eq(n\,0)" -q:v 3 -hide_banner -loglevel error -y "${THUMBS_FOLDER}/${CURDIR}/${filename}_videothumb.png" > /dev/null &
+#             echo "Converting video: $file"
+
+
+        elif [ "$IMAGE_TYPE" = "inode" ]; then
             CURDIR="$file"
             mkdir -p "THUMBS/$CURDIR/"
-            echo "CREATING: THUMBS/$CURDIR"
+            echo "DIRECTORY: THUMBS/$CURDIR"
         fi
 done < <(find . \( -not -path "*./THUMBS*" \) -print0)
