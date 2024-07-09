@@ -23,7 +23,13 @@
                 "20240525_133538.mp4",
                 "20240525_133607.mp4"
             ]
-        }]
+        }],
+        "interlink": {
+            "images": [{
+                "id": "TheBeast",
+                "text": "Images of \"The Beast\", a similar 4WD car built in 2015."
+            }]
+        }
     },
     "COR3": {
         "type": "EV3",
@@ -296,7 +302,6 @@
                 "100_3337.JPG",
                 "100_3340.JPG",
                 "100_3341.JPG",
-                "20151121_093526.jpg",
                 "20151121_093539.jpg",
                 "20151121_093553.jpg",
                 "20151121_093614.jpg",
@@ -310,6 +315,10 @@
             "programs": [{
                 "id": "IRRemote",
                 "text": "IR Remote program"
+            }],
+            "images": [{
+                "id": "EV34WD",
+                "text": "Images of \"EV3-4WD\", a similar 4WD car built in 2024."
             }]
         }
     },

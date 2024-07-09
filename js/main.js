@@ -563,39 +563,51 @@ function constructInterlinks(id, interlinkData) {
     const instURL = "./instructions.html?id=";
     const imagURL = "./images.html?id=";
     const interlinkId = id + "-interlink-zone";
+
+    const currentPage = location.pathname;
+
     $("#" + id).append(
         $("<ul>").attr("id", interlinkId).addClass("interlink-zone")
     );
     if (interlinkData.programs) {
         interlinkData.programs.forEach(program => {
+            let linkElem;
+            if (progURL.includes(currentPage)) {
+                linkElem = $("<a>").addClass("link").attr("onClick", `scrollToElem('${program.id}')`).html(program.text);
+            } else {
+                linkElem = $("<a>").addClass("link").attr("href", progURL + program.id).html(program.text);
+            }
+
             $("#" + interlinkId).append(
-                $("<li>").append(
-                    $("<a>").addClass("link")
-                    .attr("href", progURL + program.id)
-                    .html(program.text)
-                )
+                $("<li>").append(linkElem)
             );
         });
     }
     if (interlinkData.instructions) {
         interlinkData.instructions.forEach(instruction => {
+            let linkElem;
+            if (instURL.includes(currentPage)) {
+                linkElem = $("<a>").addClass("link").attr("onClick", `scrollToElem('${instruction.id}')`).html(instruction.text);
+            } else {
+                linkElem = $("<a>").addClass("link").attr("href", instURL + instruction.id).html(instruction.text);
+            }
+
             $("#" + interlinkId).append(
-                $("<li>").append(
-                    $("<a>").addClass("link")
-                    .attr("href", instURL + instruction.id)
-                    .html(instruction.text)
-                )
+                $("<li>").append(linkElem)
             );
         });
     }
     if (interlinkData.images) {
         interlinkData.images.forEach(image => {
+            let linkElem;
+            if (imagURL.includes(currentPage)) {
+                linkElem = $("<a>").addClass("link").attr("onClick", `scrollToElem('${image.id}')`).html(image.text);
+            } else {
+                linkElem = $("<a>").addClass("link").attr("href", imagURL + image.id).html(image.text);
+            }
+
             $("#" + interlinkId).append(
-                $("<li>").append(
-                    $("<a>").addClass("link")
-                    .attr("href", imagURL + image.id)
-                    .html(image.text)
-                )
+                $("<li>").append(linkElem)
             );
         });
     }

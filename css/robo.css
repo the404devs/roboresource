@@ -354,3 +354,7 @@ h5 {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
+.interlink-zone .link {
+    cursor: pointer;
+}
