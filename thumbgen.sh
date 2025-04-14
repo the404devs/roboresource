@@ -27,7 +27,7 @@ while IFS= read -d $'\0' -r file ; do
                 # If the image width is greater that 200 or the height is greater that 150 a thumb is created
                 if [ $WIDTH -ge  201 ] || [ $HEIGHT -ge 151 ]; then
                 #This line convert the image in a 200 x 150 thumb
-                    convert -sample 200x150 "$file" "$OUTNAME"
+                    magick convert -sample 200x150 "$file" "$OUTNAME"
                 fi
             fi
         elif [ "$IMAGE_TYPE" = "video" ]; then
@@ -35,7 +35,7 @@ while IFS= read -d $'\0' -r file ; do
             filename=$(basename "$file")
             filename="${filename%.*}"
             echo "file is $filename"
-            ffmpeg -i "$file" -vf "select=eq(n\,0)" -q:v 3 -hide_banner -loglevel error -y "${THUMBS_FOLDER}/${CURDIR}/${filename}_videothumb.png" > /dev/null &
+            ffmpeg -i "$file" -vf "select=eq(n\,0)" -q:v 3 -hide_banner -loglevel error -y "${THUMBS_FOLDER}/${CURDIR}/${filename}_videothumb.webp" > /dev/null &
 #             echo "Converting video: $file"
 
 

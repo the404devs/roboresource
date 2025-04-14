@@ -1,6 +1,7 @@
 {
     "FIRST PROGRAM!": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2011-09-07",
         "description": "The first program I wrote after getting my NXT 2.0 set for my 11th birthday.<br>The robot says \"Goodbye\", drives away, and screams if it sees a wall with the Ultrasonic Sensor.",
         "author": "Myself",
@@ -10,7 +11,8 @@
         ]
     },
     "Malfunction!": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2011-09-10",
         "description": "The robot wobbles back and forth, screaming \"Malfunction!\" at the top of its electronic lungs while flashing lights.",
         "author": "Myself",
@@ -21,7 +23,8 @@
         ]
     },
     "There and Back": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2011-11-20",
         "description": "The robot drives around a bit, and returns to the starting point, I assume.",
         "author": "Myself",
@@ -31,7 +34,8 @@
         ]
     },
     "Robogator": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2011-12-17",
         "description": "Default Lego-supplied programs for the NXT Robogator model.",
         "author": "Lego",
@@ -54,7 +58,8 @@
         }
     },
     "Color Sorter": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2012-01-15",
         "description": "Default Lego-supplied programs for the NXT Color Sorter model, plus an additional one by myself.",
         "author": "Lego",
@@ -74,7 +79,8 @@
         }
     },
     "Shooterbot": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2012-01-15",
         "description": "Default Lego-supplied programs for the NXT Shooterbot model.",
         "author": "Lego",
@@ -93,7 +99,8 @@
         }
     },
     "Alpha Rex": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2012-01-15",
         "description": "Default Lego-supplied programs for the NXT Alpha Rex model, plus a one from myself.",
         "author": "Lego",
@@ -117,7 +124,8 @@
         }
     },
     "Hello, Please Move": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2012-03-04",
         "description": "I'm unsure what bot this was for, but the program sees the robot drive forward, and upon seeing something in front of it, it beeps loudly, waits a moment, and tries to drive forward again.",
         "author": "Myself",
@@ -127,7 +135,8 @@
         ]
     },
     "Robo Dance": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2012-04-02",
         "description": "The robot wobbles around and flashes lights. This program was probably made for the Alpha Rex model.",
         "author": "Myself",
@@ -147,7 +156,8 @@
         }
     },
     "Motion Sensor": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2012-05-11",
         "description": "A sequence of sounds activates when the robot senses an object nearby.",
         "author": "Myself",
@@ -157,7 +167,8 @@
         ]
     },
     "Color Catapult": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2012-05-30",
         "description": "A variation of the Color Sorter program that seems to yeet the coloured balls instead of sorting them.",
         "author": "Lego",
@@ -173,7 +184,8 @@
         }
     },
     "Multi-Bot Shooter": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2012-09-01",
         "description": "\"Multi-Bot\" was a robot design I found online, however I'm not sure if this program was provided alongside it, or written by myself.<br><a class='link' href='https://www.nxtprograms.com/NXT2/multi-bot/'>https://www.nxtprograms.com/NXT2/multi-bot/</a>",
         "author": "Unknown",
@@ -189,7 +201,8 @@
         }
     },
     "Light Test": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2013-01-20",
         "description": "A program that tests the light sensor on the NXT.",
         "author": "Myself",
@@ -199,7 +212,8 @@
         ]
     },
     "Massage": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2013-07-01",
         "description": "A robot that massages you? Alright then. Has adjustable power levels via the left and right buttons.",
         "author": "Myself",
@@ -209,7 +223,8 @@
         ]
     },
     "The Tracker": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2013-08-03",
         "description": "The robot uses the Ultrasonic sensor to track an object and move towards it, while a short story about an exploding Nyan Cat plays out on the screen...",
         "author": "Myself",
@@ -219,7 +234,8 @@
         ]
     },
     "First EV3 Project": {
-        "type": ["EV3-G"],
+        "base": "NXT",
+        "lang": ["EV3-G"],
         "date": "2013-09-30",
         "description": "Testing out the new EV3 software, created a program for my NXT where the robot waits until it sees something, and after a 10 second countdown, charges at it. There's also an NXT de-make of this program. This was probably made for my Tankbot model.",
         "author": "Myself",
@@ -236,7 +252,8 @@
         }
     },
     "Tankbot": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2013-12-14",
         "description": "The program for my Tankbot model, with all sorts of different interactions with its different sensors. I believe I posted this model on the old Mindstorms forums, which is why its nicely documented and signed with my old username. This was for v9 of Tankbot, I don't seem to have any older iterations around.",
         "author": "Myself",
@@ -252,7 +269,8 @@
         }
     },
     "Compacto": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2013-12-21",
         "description": "The auto-driving program for my robot Compacto, a rather compact version of the Tankbot model. Judging from the hilariously cringe-worthy comments in the program, it was also posted to the Lego Mindstorms forums.",
         "author": "Myself",
@@ -268,7 +286,8 @@
         }
     },
     "car test": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2013-12-26",
         "description": "Unclear what sort of model this was for, but judging from the title, it was probably a car.",
         "author": "Myself",
@@ -278,7 +297,8 @@
         ]
     },
     "Safe": {
-        "type": ["EV3-G", "NXT-G"],
+        "base": "EV3",
+        "lang": ["EV3-G", "NXT-G"],
         "date": "2014-01-07",
         "description": "A robotic safe. I seem to have made programs in both the NXT and EV3 software, but I don't know which is the original and which is the port.<br><a class='link' href='https://www.nxtprograms.com/lock_box/'>https://www.nxtprograms.com/lock_box/</a>",
         "author": "Myself",
@@ -295,7 +315,8 @@
         }
     },
     "Auto Drive": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2014-01-28",
         "description": "An auto-driving program, likely a slimmed down version of the one for Compacto.<br>The program works by having the robot stop when approaching a wall, then turn itself left and right to measure which direction has more space, and drives off in that direction.",
         "author": "Myself",
@@ -311,7 +332,8 @@
         }
     },
     "troll": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2014-04-18",
         "description": "The robot does an evil laugh and wiggles whatever is attached to port A while an object is in detection range.",
         "author": "Myself",
@@ -321,7 +343,8 @@
         ]
     },
     "sumo": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2014-04-20",
         "description": "Looks to me like a decent battlebots program. The ultrasonic scans for targets and attempts to flip and push them, while the touch sensor detects if we're being pushed and allows us to take defensive action, all while a light sensor monitors for the edge of the ring and interrupts the current action to move away from it.",
         "author": "Myself",
@@ -331,7 +354,8 @@
         ]
     },
     "Big Bully": {
-        "type": ["EV3-G", "NXT-G"],
+        "base": "EV3",
+        "lang": ["EV3-G", "NXT-G"],
         "date": "2014-04-20",
         "description": "Big Bully was a battlebot, and there are NXT and EV3 versions of the program, based on the above 'sumo' program. EV3 version is a bit more complex.",
         "author": "Myself",
@@ -348,7 +372,8 @@
         }
     },
     "Calculator": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2014-06-09",
         "description": "A complex calculator program. Did I write this? There's no attribution, but I have a hunch it wasn't written by me.",
         "author": "Unknown",
@@ -358,7 +383,8 @@
         ]
     },
     "Sensor Tests": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2014-07-02",
         "description": "Seems to be simple diagnostic programs, that displays values related to the robot's sensors and motors on the screen.",
         "author": "Myself",
@@ -376,7 +402,8 @@
         }
     },
     "Slot Machine": {
-        "type": ["EV3-G", "NXT-G"],
+        "base": "EV3",
+        "lang": ["EV3-G", "NXT-G"],
         "date": "2014-07-20",
         "description": "The legend itself, the slot machine. I rebuilt this a few times over the years, with the most recent iteration in July 2016, so there are a few different versions of the program. This made a few appearances on the Mindstorms forums, and I was very proud of it and consider it one of my best creations from my time on the LEGO Mindstorms forums.",
         "author": "Myself",
@@ -393,7 +420,8 @@
         }
     },
     "Colour Sensor Test": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2015-09-29",
         "description": "The first program I wrote while volunteering at the library, shortly after they got their 6 EV3s. It was a simple test program that displays the detected colour on the screen.",
         "author": "Myself",
@@ -403,7 +431,8 @@
         ]
     },
     "Gyroboy 2015": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2015-11-21",
         "description": "Probably just the default Gyroboy program with little modifications. During Saturday drop-in robotics, we worked on building Gyroboy and the other default EV3 Education models.",
         "author": "Lego",
@@ -427,7 +456,8 @@
         }
     },
     "Answerer": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2015-11-28",
         "description": "Another Saturday afternoon library creation. A genie-like program that answers questions with 13 randomly-picked wacky answers, like \"DEEZ NUTS\". Not sure what the program was originally based off of, but the answers were definitely suggested by the kids, with my help for the randomization.",
         "author": "Library kids",
@@ -437,7 +467,8 @@
         ]
     },
     "IR Remote": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2016-02-12",
         "description": "A standard remote control program, for use with the HiTechnic IR Sensor.",
         "author": "Myself",
@@ -453,7 +484,8 @@
         }
     },
     "Virus": {
-        "type": ["NXT-G"],
+        "base": "NXT",
+        "lang": ["NXT-G"],
         "date": "2016-11-26",
         "description": "Fills the brick's storage with garbage data. I guess that counts as a virus.",
         "author": "Myself",
@@ -463,7 +495,8 @@
         ]
     },
     "SANIC SPEED": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2017-06-16",
         "description": "The robot drives forward at top speed, while yelling \"DETECTED\". I had probably arranged a race competition.",
         "author": "Library kids",
@@ -473,7 +506,8 @@
         ]
     },
     "Aiden": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2017-11-10",
         "description": "A standard line-following program. Probably done by a kid named Aiden, with my teachings.",
         "author": "Library kids",
@@ -483,7 +517,8 @@
         ]
     },
     "hi": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2018-02-08",
         "description": "Another line-follower. I seem to love teaching kids this one.",
         "author": "Library kids",
@@ -493,7 +528,8 @@
         ]
     },
     "Jeff Bot Final BATTLEBOTS": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2018-07-02",
         "description": "Another (noticeably incorrect) line-follower, which isn't very useful in a battlebots scenario.... Very sus.",
         "author": "Library kids",
@@ -503,7 +539,8 @@
         ]
     },
     "a": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2018-07-09",
         "description": "I think this is an improvement over Jeff Bot made by the same kids. It uses the same line-detection concept, but seems much more adapted to battlebots.",
         "author": "Library kids",
@@ -513,7 +550,8 @@
         ]
     },
     "The Destroyer": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2018-07-30",
         "description": "More line followers, incorrect at that. Clearly I wasn't teaching them correctly. I seem to remember this bot as a battlebot though, so this may just be an earlier version of their program.",
         "author": "Library kids",
@@ -523,7 +561,8 @@
         ]
     },
     "Line Follower Demo 2018": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2018-07-31",
         "description": "A demo program I made while working at Cybercamp, that shows how to use the colour sensor to follow a line, plus a few other demos. Now includes a new advanced line-follower program that times itself, written 2021-12-29 while working at Idea Labs, as well as a Dual Sensor line-follower, written 2022-06-06 while working at the WSPL.",
         "author": "Myself",
@@ -533,7 +572,8 @@
         ]
     },
     "Ultrasonic Guide Wheel 2018": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2018-08-01",
         "description": "A demo program I made while working at Cybercamp, for the classic \"doors challenge\", where the robot would drive along a wall and use the ultrasonic to detect an open door and drive through it, while using a guide wheel to keep the robot straight.",
         "author": "Myself",
@@ -543,7 +583,8 @@
         ]
     },
     "BESTBOT": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2019-08-01",
         "description": "The robot drives forward until the colour sensor sees *literally anything*, and then stops. I'm not sure what the intention was with this one.",
         "author": "Library kids",
@@ -553,7 +594,8 @@
         ]
     },
     "poop": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2021-10-12",
         "description": "A robot that purrs like a cat for an infinite amount of time, and then says \"hiiiiiiiiiii\" and spins. Likely a joke.",
         "author": "Myself",
@@ -563,7 +605,8 @@
         ]
     },
     "Owen 2021-10-19": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2021-10-19",
         "description": "The most basic movement demo there is, showing how to use the move blocks, and for showing kids how to navigate the interface of the EV3 software (saving, downloading, projects/programs, where to find different blocks, etc.).",
         "author": "Myself",
@@ -573,7 +616,8 @@
         ]
     },
     "Plot Bot Starter": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2021-11-16",
         "description": "3 demo programs for the Plot Bot drawing robot that draw a triangle, square and circle. Written while working at Idea Labs.",
         "author": "Myself",
@@ -593,7 +637,8 @@
         }
     },
     "Sensor Demos": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2021-12-07",
         "description": "Little demos to explain how the touch and ultrasonic sensors work. Written while working at Idea Labs.",
         "author": "Myself",
@@ -603,7 +648,8 @@
         ]
     },
     "FrogBot": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2021-12-07",
         "description": "The robot spins in a circle until it spots something with the ultrasonic sensor, and then charges at it, before backing up and resuming its spinning. Unclear what makes this so froggy. I've included some other programs written in the same session that do essentially the same thing. I think I told the kids to use the spin-and-search tactic for a battlebots contest where we didnt have a proper ring due to the carpet floor of the room.",
         "author": "Library kids",
@@ -615,7 +661,8 @@
         ]
     },
     "Confused": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2021-12-29",
         "description": "A bunch of programs some kids wrote with my assistance. Some fun concepts like loop interrupts and more line followers(!). Not sure why I never bothered to show loop interrupts and that sort of logic before, but I did this time.",
         "author": "Library kids",
@@ -625,7 +672,8 @@
         ]
     },
     "Touch": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2022-02-15",
         "description": "A lot of different programs, with some concepts I did not teach these kids, and have no memory of them using in this class??? It was only the second week and according to my notes, we were only supposed to be driving in basic shapes???<br>Anyways, there are programs for detecting the touch sensors being pressed, both in simple and advanced dual-wield forms, as well as other smaller movement experiments they made. I guess I can use this as a Touch Sensor tutorial in the future.",
         "author": "Library kids",
@@ -635,7 +683,8 @@
         ]
     },
     "Gyroboy 2022": {
-        "type": ["EV3-G"],
+        "base": "EV3",
+        "lang": ["EV3-G"],
         "date": "2022-04-26",
         "description": "Don't forget to upload this once you're done.",
         "author": "Myself",
@@ -659,7 +708,8 @@
         }
     },
     "NX-D4": {
-        "type": ["EV3-G", "NXT-G"],
+        "base": "NXT",
+        "lang": ["EV3-G", "NXT-G"],
         "date": "2022-05-06",
         "description": "The programs for my astromech droid, NX-D4. I made two programs: the first is a remote-control program relying on the Hi Technic IR Receiver (written in NXT-G), and the second is an autonomous navigation program where the bot uses its sensors to get around (written in EV3-G).",
         "author": "Myself",
@@ -680,7 +730,8 @@
         }
     },
     "New EV3 Tutorials": {
-        "type": ["EV3-Scratch"],
+        "base": "EV3",
+        "lang": ["EV3-Scratch"],
         "date": "2022-06-01",
         "description": "A translation of my EV3 tutorial programs, remade and upgraded for the new(ish) Scratch-based EV3 programming environment.",
         "author": "Myself",
@@ -696,7 +747,8 @@
         ]
     },
     "Auto Navigation 2023": {
-        "type": ["EV3-Scratch"],
+        "base": "EV3",
+        "lang": ["EV3-Scratch"],
         "date": "2023-02-27",
         "description": "A program that allows the EV3 to navigate it's surrounding automatically, using the Ultrasonic Sensor.<br><br>Both programs see the robot choose to turn either left or right upon reaching a wall. In the simple program, the robot makes this choice randomly, while in the advanced program the robot uses the Ultrasonic and a bit of math to determine which way has more open space, and turns that way.",
         "author": "Myself",
