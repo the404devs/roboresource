@@ -444,7 +444,7 @@ div.blob > div.details > ul > li:has(a.link) {
 }
 
 div.blob > div.details a {
-    display: contents;
+    /* display: contents; */
 }
 
 div.blob > div.details > div.button-group {
