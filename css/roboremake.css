@@ -45,10 +45,10 @@
     --p2: url('./pattern4.svg');
 
     --link: goldenrod;
-    --nxt: rgba(131, 85, 0, 0.8);
+    --nxt: rgba(97, 46, 0, 0.8);
     --ev3: rgba(83, 42, 42, 0.8);
     --close: rgb(255 30 30 / 80%);
-    --wedo: rgba(0, 101, 134, 0.8);
+    --wedo: rgba(0, 80, 134, 0.8);
 
     --header-height: 100px;
     --footer-height: 30px;
@@ -69,6 +69,16 @@
 @font-face {
     font-family: "Inconsolata";
     src: url("font/Inconsolata-Regular.ttf");
+}
+
+@media screen and (max-width: 800px) {
+    button.nav-primary, button.nav-secondary {
+        font-size: 2.5vw;
+    }
+
+    span.page-title {
+        font-size: 3vw;
+    }
 }
 
 *{
@@ -174,6 +184,7 @@ span.page-title {
     color: var(--fg1);
     font-weight: bold;
     font-size: 30px;
+    text-wrap-mode: nowrap;
     opacity: 1;
     /* text-decoration: underline; */
     transition: 0.2s ease all;
@@ -294,7 +305,7 @@ span.spacer {
 }
 
 div.nav-container {
-    padding: 0 5%;
+    /* padding: 0 5%; */
     display: flex;
     flex-direction: row;
     align-self: center;
@@ -317,16 +328,22 @@ div.sidenav {
     top: var(--header-height);
     align-self: flex-start;
     transition: 0.2s ease top;
+    display: flex;
+    flex-direction: column;
 }
 
 div.sort-module {
     background-color: var(--bg2);
     border: 1px solid var(--border1);
     font-family: 'Iosevka';
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     display: flex;
     flex-direction: column;
     min-width: 250px;
+}
+
+div.sort-module:first-of-type {
+    margin-top: 10px;
 }
 
 div.sort-module#jump-module {
@@ -523,7 +540,7 @@ div.sort-list > label {
 }
 
 div.sort-list  .link {
-    text-wrap: nowrap;
+    text-wrap-mode: nowrap;
     width: min-content;
     cursor: pointer;
     margin-bottom: 5px;

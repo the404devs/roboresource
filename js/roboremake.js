@@ -435,7 +435,8 @@ function navDropdownHeightCalculator() {
 function jumplistDynamicHeightCalculator() {
     const modules = document.querySelectorAll('.sort-module:not(#jump-module)');
 
-    let totalHeightOfOtherModules = 10;
+
+    let totalHeightOfOtherModules = 0;
     modules.forEach(m => {
         totalHeightOfOtherModules += m.getBoundingClientRect().height;
         totalHeightOfOtherModules += parseInt(getComputedStyle(m).marginTop);
@@ -444,8 +445,10 @@ function jumplistDynamicHeightCalculator() {
     });
 
     const jumplist = document.getElementById('jump-module');
+    const jumplistMargin = parseInt(getComputedStyle(jumplist).marginTop) + parseInt(getComputedStyle(jumplist).marginBottom);
 
-    jumplist.style.setProperty('--jumpListDynamicHeight', `${window.innerHeight - totalHeightOfOtherModules}px`);
+
+    jumplist.style.setProperty('--jumpListDynamicHeight', `${window.innerHeight - totalHeightOfOtherModules - jumplistMargin}px`);
 }
 
 function showImageOverlay(imageID) {
