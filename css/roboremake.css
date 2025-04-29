@@ -78,6 +78,7 @@
 
     span.page-title {
         font-size: 2vw;
+        border: 1px solid red;
     }
 }
 
