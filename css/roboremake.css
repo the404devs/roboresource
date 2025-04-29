@@ -71,14 +71,14 @@
     src: url("font/Inconsolata-Regular.ttf");
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 800px) {
     button.nav-primary, button.nav-secondary {
         font-size: 2vw;
     }
 
     span.page-title {
         font-size: 2vw;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 }
 
@@ -544,7 +544,7 @@ div.sort-list  .link {
     text-wrap-mode: nowrap;
     width: max-content;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     cursor: pointer;
     margin-bottom: 5px;
 }
