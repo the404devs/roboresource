@@ -71,7 +71,7 @@
     src: url("font/Inconsolata-Regular.ttf");
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     button.nav-primary, button.nav-secondary {
         font-size: 2vw;
     }
