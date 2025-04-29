@@ -73,11 +73,11 @@
 
 @media screen and (max-width: 800px) {
     button.nav-primary, button.nav-secondary {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     span.page-title {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
 
