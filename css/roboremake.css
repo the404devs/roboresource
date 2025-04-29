@@ -541,7 +541,7 @@ div.sort-list > label {
 
 div.sort-list  .link {
     text-wrap-mode: nowrap;
-    /* width: min-content; */
+    width: max-content;
 
     border: 1px solid red;
     cursor: pointer;
